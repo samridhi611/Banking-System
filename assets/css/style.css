@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: poppins;
+    background-color: #252525;
+    background: url("../media/bg.jpeg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* splash screen css starts here  */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(181,255,255,1) 100%); 
+    z-index: 99999;
+}
+
+.loader {
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin .5s infinite ease;
+    transform: translateZ(0);
+  }
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0em -2.6em 0em 0em #ffffff, 1.8em -1.8em 0 0em rgba(255,255,255, 0.2), 2.5em 0em 0 0em rgba(255,255,255, 0.2), 1.75em 1.75em 0 0em rgba(255,255,255, 0.2), 0em 2.5em 0 0em rgba(255,255,255, 0.2), -1.8em 1.8em 0 0em rgba(255,255,255, 0.2), -2.6em 0em 0 0em rgba(255,255,255, 0.5), -1.8em -1.8em 0 0em rgba(255,255,255, 0.7);
+    }
+    12.5% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.7), 1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255,255,255, 0.2), 1.75em 1.75em 0 0em rgba(255,255,255, 0.2), 0em 2.5em 0 0em rgba(255,255,255, 0.2), -1.8em 1.8em 0 0em rgba(255,255,255, 0.2), -2.6em 0em 0 0em rgba(255,255,255, 0.2), -1.8em -1.8em 0 0em rgba(255,255,255, 0.5);
+    }
+    25% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.5), 1.8em -1.8em 0 0em rgba(255,255,255, 0.7), 2.5em 0em 0 0em #ffffff, 1.75em 1.75em 0 0em rgba(255,255,255, 0.2), 0em 2.5em 0 0em rgba(255,255,255, 0.2), -1.8em 1.8em 0 0em rgba(255,255,255, 0.2), -2.6em 0em 0 0em rgba(255,255,255, 0.2), -1.8em -1.8em 0 0em rgba(255,255,255, 0.2);
+    }
+    37.5% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.2), 1.8em -1.8em 0 0em rgba(255,255,255, 0.5), 2.5em 0em 0 0em rgba(255,255,255, 0.7), 1.75em 1.75em 0 0em #ffffff, 0em 2.5em 0 0em rgba(255,255,255, 0.2), -1.8em 1.8em 0 0em rgba(255,255,255, 0.2), -2.6em 0em 0 0em rgba(255,255,255, 0.2), -1.8em -1.8em 0 0em rgba(255,255,255, 0.2);
+    }
+    50% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.2), 1.8em -1.8em 0 0em rgba(255,255,255, 0.2), 2.5em 0em 0 0em rgba(255,255,255, 0.5), 1.75em 1.75em 0 0em rgba(255,255,255, 0.7), 0em 2.5em 0 0em #ffffff, -1.8em 1.8em 0 0em rgba(255,255,255, 0.2), -2.6em 0em 0 0em rgba(255,255,255, 0.2), -1.8em -1.8em 0 0em rgba(255,255,255, 0.2);
+    }
+    62.5% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.2), 1.8em -1.8em 0 0em rgba(255,255,255, 0.2), 2.5em 0em 0 0em rgba(255,255,255, 0.2), 1.75em 1.75em 0 0em rgba(255,255,255, 0.5), 0em 2.5em 0 0em rgba(255,255,255, 0.7), -1.8em 1.8em 0 0em #ffffff, -2.6em 0em 0 0em rgba(255,255,255, 0.2), -1.8em -1.8em 0 0em rgba(255,255,255, 0.2);
+    }
+    75% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.2), 1.8em -1.8em 0 0em rgba(255,255,255, 0.2), 2.5em 0em 0 0em rgba(255,255,255, 0.2), 1.75em 1.75em 0 0em rgba(255,255,255, 0.2), 0em 2.5em 0 0em rgba(255,255,255, 0.5), -1.8em 1.8em 0 0em rgba(255,255,255, 0.7), -2.6em 0em 0 0em #ffffff, -1.8em -1.8em 0 0em rgba(255,255,255, 0.2);
+    }
+    87.5% {
+      box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.2), 1.8em -1.8em 0 0em rgba(255,255,255, 0.2), 2.5em 0em 0 0em rgba(255,255,255, 0.2), 1.75em 1.75em 0 0em rgba(255,255,255, 0.2), 0em 2.5em 0 0em rgba(255,255,255, 0.2), -1.8em 1.8em 0 0em rgba(255,255,255, 0.5), -2.6em 0em 0 0em rgba(255,255,255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+    }
+  }
+/* splash screen css ends here  */
+
+/* navbar css starts here  */
+
+.navbar-brand{
+    font-family: poppins;
+    font-size: 1.7rem;
+    color: #f3f1f1;
+    font-weight:  700;
+    letter-spacing: 3px;
+    left: 40px;
+}
+
+.navbar-brand span{
+    color: rgb(148, 227, 227);
+}
+
+.nav-item{
+    padding: 10px;
+}
+
+.nav-link{
+    color: #f3f1f1!important;
+    font-family: poppins;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover, .nav-link:active{
+    color:rgb(148, 227, 227)!important;
+    transition: .8s;
+}
+/* navbar css ends here  */
+
+/* here content css starts here  */
+
+h1{
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #f3f1f1;
+    margin-bottom: 0;
+}
+span{
+    color: rgb(148, 227, 227);
+}
+
+.hero-content{
+    height: 90vh;
+    color: #ffffff;
+    padding: 3rem;
+    vertical-align: middle;
+}
+
+.lead{
+    opacity: 70%;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+.hero-img{
+    vertical-align: middle;
+    height: 80%;
+    width: 80%;
+}
+
+@media only screen and (max-width: 766px) {
+    .hero-img {
+      display: none;
+    }
+}
+
+/* Get started btn */
+.btns {
+    background: rgb(148, 227, 227);
+    background-image: -webkit-linear-gradient(top, rgb(148, 227, 227), #3e7fa8);
+    background-image: -moz-linear-gradient(top, rgb(148, 227, 227), #3e7fa8);
+    background-image: -ms-linear-gradient(top, rgb(148, 227, 227), #3e7fa8);
+    background-image: -o-linear-gradient(top, rgb(148, 227, 227), #3e7fa8);
+    background-image: linear-gradient(to bottom, rgb(148, 227, 227), #3e7fa8);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: poppins;
+    color: #f3f1f1;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    border: solid #f3f1f1 2px;
+    text-decoration: none;
+  }
+
+  i{
+    color: #ffffff;
+  }
+  
+  .btns:hover {
+    background: #3e7fa8;
+    background-image: -webkit-linear-gradient(top, #3e7fa8, rgb(148, 227, 227));
+    background-image: -moz-linear-gradient(top, #3e7fa8, rgb(148, 227, 227));
+    background-image: -ms-linear-gradient(top, #3e7fa8, rgb(148, 227, 227));
+    background-image: -o-linear-gradient(top, #3e7fa8, rgb(148, 227, 227));
+    background-image: linear-gradient(to bottom, #3e7fa8, rgb(148, 227, 227));
+    text-decoration: none;
+    color: #f3f1f1;
+    border: solid #f3f1f1 2px;
+    transition: .5s;
+  }
+/* get-started-buttons css end here*/
+/* content ends here */
+
+/* footer css starts here */
+footer{
+    background-color: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    color: #f3f1f1;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+hr{
+    height: 0.3px;
+    background-color: #ccc;
+    color: silver;
+    padding: 0;
+}
+/* footer css ends here  */
+
+/* 
+media queries */
+@media screen and (max-width:1024px){
+  .navbar-brand{
+    font-family: poppins;
+    font-size: 1.7rem;
+    color: #f3f1f1;
+    font-weight:  700;
+    letter-spacing: 3px;
+    left: 20px;
+}
+  .hero-content{
+    height: 70vh;
+    color: #ffffff;
+    padding: 1.5rem;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width:769px){
+  .navbar-brand{
+    font-family: poppins;
+    font-size: 1.7rem;
+    color: #f3f1f1;
+    font-weight:  700;
+    letter-spacing: 3px;
+    left: 20px;
+}
+  .hero-content{
+    margin-top:60px;
+    height: 72vh;
+    color: #ffffff;
+    padding: 3rem;
+    vertical-align: middle;
+    text-align: center;
+  }
+  footer{
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+}
+
+@media screen and (max-width:480px){
+  
+  .hero-content{
+    margin-top:70px;
+    height: 70vh;
+    color: #ffffff;
+    padding: 3rem;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  footer{
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+}
